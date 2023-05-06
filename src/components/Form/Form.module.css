@@ -1,0 +1,126 @@
+.conteiner{
+    /* border-radius: 10%;
+    color: greenyellow;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 3em;
+    gap: 2.5em; */
+    /* ----------cuadro colorincho */
+    /* position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;   */
+    /* ---------------- */
+   
+}
+
+.content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.formulario{
+width: 400px;
+height: 400px;
+/* linear-gradient multicolores animado */
+background: linear-gradient(45deg, rgba(0, 255, 34, 0.5), rgba(107, 246, 97, 0.144), rgb(2, 133, 153));
+/* sombreado alrededor */
+box-shadow: 0px 0px 10px rgba(210, 247, 4, 0.35);
+/* desenfoque */
+backdrop-filter:blur(5px);
+border-radius: 10px;
+/* flex formar una columna hacia abajo */
+display: flex;
+flex-direction: column;
+align-items: center;
+/* propiedades de flex */
+padding-left: 20px;
+padding-right: 20px;
+/* texto alineacion centro */
+text-align: center;
+animation: fadeIn .5s  linear forwards;
+}
+.title{
+    /* font-size: 2rem;
+    margin-bottom: .5em; */
+text-align:center;
+font-size: 30px;
+color: white;
+cursor: default;
+-webkit-user-select: none;
+animation: topIn .5s  linear forwards;
+font-family: 'Rick and Morty'; src: url("../fonts/Curse of the Zombie.ttf");
+margin-bottom: .9em;
+}
+
+.input{
+    border: 2px solid greenyellow;
+    
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e;
+    /* definir font-family */
+    font-family: Roboto, sans-serif ;
+   
+}
+.label{
+    /* color: #5757577e; */
+    color: white;
+    cursor: pointer;
+    top: 0;
+    left: 5px;
+ 
+}
+.boton{
+    color: greenyellow;
+    background-color: gray;
+    /* font-family: definir; */
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border-radius: .5em;
+    margin-bottom: .9em;
+
+
+}
+
+
+/* -------------------------------------------------------- */
+
+/*la imagen para animar */
+.image{
+    width: 100px;
+    display: block;
+    margin: 0 auto ;
+   
+ }
+ 
+ /* como animar la imagen del baner */
+ .image{
+    animation: movimiento 2.5s linear infinite;
+ }
+ @keyframes movimiento{
+    0%{
+       transform: translateY(0);
+    }
+    50%{
+       transform: translateY(30px);
+    }
+    100%{
+       transform: translateY(0);
+    }
+ }
